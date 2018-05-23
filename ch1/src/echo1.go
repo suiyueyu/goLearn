@@ -1,10 +1,11 @@
 package main
+
 import (
 	"fmt"
 	"os"
 )
 
-func main_echo1(){
+func main_echo1() {
 	var s, sep string
 	for i := 1; i < len(os.Args); i++ {
 		s += sep + os.Args[i]
