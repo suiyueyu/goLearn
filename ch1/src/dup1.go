@@ -1,4 +1,4 @@
-package main
+package dup1
 
 import (
 	"bufio"
@@ -6,11 +6,11 @@ import (
 	"os"
 )
 
-func main() {
+func main1() {
 	counts := make(map[string]int)
 	input := bufio.NewScanner(os.Stdin)
 	for input.Scan() {
-		counts[input.Text()] ++
+		counts[input.Text()]++
 	}
 
 	for line, n := range counts {
