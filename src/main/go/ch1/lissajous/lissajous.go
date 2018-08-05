@@ -10,6 +10,7 @@ import (
 	"math/rand"
 	"net/http"
 	"os"
+	"time"
 )
 
 var palette = []color.Color{color.White, color.Black}
@@ -20,7 +21,7 @@ const (
 )
 
 func main() {
-	// rand.Seed(time.Now().UTC().UnixNano())
+	rand.Seed(time.Now().UTC().UnixNano())
 
 	if len(os.Args) > 1 && os.Args[1] == "web" {
 		handler := func(w http.ResponseWriter, r *http.Request) {
