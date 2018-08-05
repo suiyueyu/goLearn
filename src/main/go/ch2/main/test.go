@@ -2,9 +2,10 @@ package main
 
 import (
 	"fmt"
-	"main/go/ch2/tempconv"
+
+	"github.com/suiyueyu/goLearn/src/main/go/ch2/popcount"
 )
 
 func main() {
-	fmt.Println(tempconv.CToF(tempconv.BoilingC))
+	fmt.Println(popcount.PopCount(7))
 }
